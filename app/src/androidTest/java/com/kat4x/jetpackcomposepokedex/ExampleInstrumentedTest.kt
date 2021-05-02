@@ -1,4 +1,4 @@
-package com.plcoding.jetpackcomposepokedex
+package com.kat4x.jetpackcomposepokedex
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
