@@ -1,0 +1,9 @@
+package com.kat4x.jetpackcomposepokedex.data.remote.responses
+
+
+import com.google.gson.annotations.SerializedName
+
+data class OfficialArtwork(
+    @SerializedName("front_default")
+    var frontDefault: String?
+)
