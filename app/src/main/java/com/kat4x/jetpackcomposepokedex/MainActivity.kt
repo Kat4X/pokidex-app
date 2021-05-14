@@ -10,9 +10,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
+import com.kat4x.jetpackcomposepokedex.pokeminDetail.PokemonDetailScreen
 import com.kat4x.jetpackcomposepokedex.pokemonList.PokemonListScreen
 import com.kat4x.jetpackcomposepokedex.ui.theme.JetpackComposePokedexTheme
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.*
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -48,6 +50,11 @@ class MainActivity : ComponentActivity() {
                             it.arguments?.getString("pokemonName")
                         }
 
+                        PokemonDetailScreen(
+                            dominantColor = dominantColor,
+                            pokemonName = pokemonName?.toLowerCase(Locale.ROOT) ?: "",
+                            navController = navController
+                        )
                     }
                 }
             }

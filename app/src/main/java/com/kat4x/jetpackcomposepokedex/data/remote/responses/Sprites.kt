@@ -4,24 +4,14 @@ package com.kat4x.jetpackcomposepokedex.data.remote.responses
 import com.google.gson.annotations.SerializedName
 
 data class Sprites(
-    @SerializedName("back_default")
-    var backDefault: String?,
-    @SerializedName("back_female")
-    var backFemale: Any?,
-    @SerializedName("back_shiny")
-    var backShiny: String?,
-    @SerializedName("back_shiny_female")
-    var backShinyFemale: Any?,
-    @SerializedName("front_default")
-    var frontDefault: String?,
-    @SerializedName("front_female")
-    var frontFemale: Any?,
-    @SerializedName("front_shiny")
-    var frontShiny: String?,
-    @SerializedName("front_shiny_female")
-    var frontShinyFemale: Any?,
-    @SerializedName("other")
-    var other: Other?,
-    @SerializedName("versions")
-    var versions: Versions?
+    @SerializedName("back_default") val backDefault: String?,
+    @SerializedName("back_female") val backFemale: Any?,
+    @SerializedName("back_shiny") val backShiny: String?,
+    @SerializedName("back_shiny_female") val backShinyFemale: Any?,
+    @SerializedName("front_default") val frontDefault: String,
+    @SerializedName("front_female") val frontFemale: Any?,
+    @SerializedName("front_shiny") val frontShiny: String?,
+    @SerializedName("front_shiny_female") val frontShinyFemale: Any?,
+    @SerializedName("other") val other: Other?,
+    @SerializedName("versions") val versions: Versions?
 )
