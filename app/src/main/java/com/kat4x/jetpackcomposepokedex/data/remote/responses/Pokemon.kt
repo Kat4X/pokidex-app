@@ -13,7 +13,7 @@ data class Pokemon(
     @SerializedName("game_indices")
     var gameIndices: List<GameIndice>?,
     @SerializedName("height")
-    var height: Int?,
+    var height: Int,
     @SerializedName("held_items")
     var heldItems: List<Any>?,
     @SerializedName("id")
@@ -37,7 +37,7 @@ data class Pokemon(
     @SerializedName("stats")
     var stats: List<Stat>?,
     @SerializedName("types")
-    var types: List<Type>?,
+    var types: List<Type>,
     @SerializedName("weight")
-    var weight: Int?
+    var weight: Int
 )
